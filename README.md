@@ -1,11 +1,6 @@
 # sdsc-summer-institute-2024
-Repository for the HPC &amp; Data Science Summer Institute 2024
-
-
-# SDSC Summer Institute 2023
-SDSC Summer Institute 2023 website: https://na.eventscloud.com/website/54186/
-
 This repository hosts all material and slides of the presentations at the Summer Institute
+SDSC Summer Institute 2024 website: [https://na.eventscloud.com/website/54186/](https://na.eventscloud.com/website/70797/)
 
 ## Interactive Videos
 * A full catalog of all our trainings at SDSC can be found [here]().
