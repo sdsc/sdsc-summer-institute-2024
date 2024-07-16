@@ -1,5 +1,5 @@
 ### SDSC Summer Institute 2024
-# Session 6.2 Introduction to Voyager
+# Session 6.2 Overview of Voyager
 
 **Date:** Friday, August 9, 2024
 
