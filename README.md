@@ -41,7 +41,7 @@ All times are in Pacific time.
 | 2:45 PM – 3:00 PM | Break |    |
 | 3:00 PM – 4:00 PM  | 	[2.5 Interactive Computing]() |  [Mary Thomas](https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html)  |
 | 4:00 PM - 4:30 PM   | 	Q&A + Wrap-up |    |
-| 4:45 PM - 7:00 PM  | 	Evening Reception - Offsite (Transportation will be provided - departure from SDSC driveway at 4:45 PM) |    |
+| 4:45 PM - 7:00 PM  | 	Evening Reception - Offsite <br>(Transportation will be provided - departure from SDSC driveway at 4:45 PM) |    |
 
 [Back to Top](#top)
 
