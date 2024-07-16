@@ -1,5 +1,9 @@
 # Session 4.1b Advanced Git & GitHub
 
+**Date:** Wednesday, August 6, 2024
+
+**Presented by:** [Fernando Garzon]()
+
 You should be already familiar with creating pull requests, merging, and rebasing branches
 
 - https://github.com/sdsc/sdsc-summer-institute-2021/tree/main/1.4b_Advanced_Github
