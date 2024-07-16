@@ -5,11 +5,11 @@ Some sessions require that customized software be installed on **your laptop**. 
 
 See this quick-start guide: https://github.com/sdsc-hpc-training-org/basic_skills/tree/master/using_github
 
-### [Isaac To Update] For Session 4.2b Information Visualization Concepts
+### [Isaac To Update, if needed] For Session 4.2b Information Visualization Concepts
 * Install Python3
 * Install Tableau and either get free trial or register with school account (https://www.tableau.com/products/desktop/download)
 
-### [Isaac To Update] For Session 4.3a Scientific Visualization for mesh based data with Unreal Engine 5
+### [Isaac To Update, if needed] For Session 4.3a Scientific Visualization for mesh based data with Unreal Engine 5
 #### PREREQUISITE TASKS: 
 * Install Epic Games Launcher and create user account (https://www.unrealengine.com/en-US/download)
 * Install Unreal Engine 5.2 from Epic Games Launcher
