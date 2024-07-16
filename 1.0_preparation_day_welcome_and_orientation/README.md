@@ -2,7 +2,7 @@
 # Session 1.0 Preparation Day
 
 
-**Date: Wednesday, August 5, 2024**
+**Date: Tuesday, July 30, 2024**
 
 
 ## Welcome & Orientation
