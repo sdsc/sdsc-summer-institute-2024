@@ -8,10 +8,9 @@
 **Presented by:** [Robert Sinkovits](https://www.sdsc.edu/research/researcher_spotlight/sinkovits_robert.html) (sinkovit @sdsc.edu)
 
 ### Reading and Presentations:
-* **Lecture material:**
-   * Presentation Slides: will be made available closer to the session
+
 * **Source Code/Examples:**
-   * Lastest version at https://github.com/sinkovit/Parallel-concepts
+   * Lastest version at [https://github.com/sinkovit/Parallel-concepts](https://github.com/sdsc-complecs/Parallel-computing-concepts)
 
 ### TASKS: None at this time.
 
