@@ -10,7 +10,7 @@
 ### Reading and Presentations:
 
 * **Source Code/Examples:**
-   * Lastest version at [https://github.com/sinkovit/Parallel-concepts](https://github.com/sdsc-complecs/Parallel-computing-concepts)
+   * Lastest version at [https://github.com/sdsc-complecs/Parallel-computing-concepts](https://github.com/sdsc-complecs/Parallel-computing-concepts)
 
 ### TASKS: None at this time.
 
