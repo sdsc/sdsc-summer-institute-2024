@@ -93,7 +93,7 @@ The document below contains a list of software being used at the institute and i
 * We will be using Zoom for preparation day on Tuesday, July 30, 2024, from 9am-11am (Pacific Time).
 * You will need to install the latest [Zoom](https://zoom.us/download) client, which is available for Windows, MacOS and Linux. Once installed, you can test your microphone and camera interface with Zoom [here](https://zoom.us/test). You can find more information on Zoom system requirements, including bandwidth requirements [here](https://support.zoom.us/hc/en-us/articles/201362023-System-Requirements-for-PC-Mac-and-Linux).
 
-Connection details are sent as a calendar invite to all HPC & DS participants. You should have received an invite for the preparation day on Tuesday, July 30, 2024, from 9am - 11am (Pacific Time). If you did not receive this an invite, please contact cwong@sdsc.edu.
+Connection details will be sent as a calendar invite to all HPC & DS participants. You will be receiving an invite for the preparation day on Tuesday, July 30, 2024, from 9am - 11am (Pacific Time) closer to the event. 
 
 Note: While Prep Day is a virtual event, the main HPC & Data Science Summer Institute sessions (Monday, August 5 - Friday, August 9) will be held in person and will not available remotely.
 
