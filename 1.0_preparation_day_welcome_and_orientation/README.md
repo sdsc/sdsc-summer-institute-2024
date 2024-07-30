@@ -16,7 +16,7 @@ In this virtual session, we'll familiarize you with logging into Expanse with yo
 
 ### Getting your training account and password
 
-You should have received an email with the subject line: **HPC & DS 2023 Summer Institute: Account Set-Up**. The content of the email should be as follows:
+You should have received an email with the subject line: **HPC & DS 2024 Summer Institute: Account Set-Up**. The content of the email should be as follows:
 
 ```
 Your personalized account information is given below.
@@ -39,7 +39,7 @@ This training account may be used:
 For any account user issues/questions, contact consult@sdsc.edu. 
 ```
 
-If you are no longer able to retrieve your password and/or have forgotten the password, please let us know in the Zoom chat. We will resend you a new password as soon as possible.
+If you are no longer able to retrieve your password and/or have forgotten the password, please email consult@sdsc.edu. We will resend you a new password as soon as possible.
 
 ### Login to the Expanse User Portal
 
