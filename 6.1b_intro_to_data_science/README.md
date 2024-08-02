@@ -8,7 +8,7 @@ In this short overview, we will show you a plethora of applications that are ena
 
 **Presented by:** 
 * [Subhasis Dasgupta](https://profiles.ucsd.edu/subhasis.dasgupta) (sudasgupta @ucsd.edu)
-* [Shweta Purawat](https://profiles.ucsd.edu/shweta.purawat) (shpurawat @ucsd.edu)
+* Jon Stephens
 
 ### Reading and Presentations:
 * **Lecture material:**
