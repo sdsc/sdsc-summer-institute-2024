@@ -13,7 +13,6 @@
 * **Source Code/Examples:** N/A
 
 ### TASKS:
-* Install Python3
-* Install Tableau and either get free trial or register with school account (https://www.tableau.com/products/desktop/download)
+* Install Python3 and Jupyterlab
 
 [Back to Top](#top)
