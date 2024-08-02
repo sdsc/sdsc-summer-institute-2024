@@ -16,15 +16,15 @@
 * Install Epic Games Launcher and create user account (https://www.unrealengine.com/en-US/download)
 * Install Unreal Engine 5.3 from Epic Games Launcher
 * Install Cesium Plugin from Epic Games Launcher Marketplace (https://www.unrealengine.com/marketplace/en-US/product/cesium-for-unreal)
-*
+
 * Install Paraview 5.12 (https://www.paraview.org/download/).
 * If installing the MPI version on Windows, MS-MPI is required (https://learn.microsoft.com/en-us/message-passing-interface/microsoft-mpi)
-* 
+
 * Make sure Python3 is installed on your computer
 * Install the following Python-based dependencies:
-* - numpy
-* - matplotlib
-* - pyvtk
-* - pyvista
+  * numpy
+  * matplotlib
+  * pyvtk
+  * pyvista
 
 [Back to Top](#top)
