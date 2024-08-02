@@ -22,6 +22,7 @@
 
 * Make sure Python3 is installed on your computer
 * Install the following Python-based dependencies:
+  * jupyterlab
   * numpy
   * matplotlib
   * pyvtk
