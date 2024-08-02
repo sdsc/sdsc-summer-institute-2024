@@ -99,7 +99,7 @@ All times are in Pacific time.
 | -------------------- | ----------- | ----------- |
 | 8:00 AM – 8:30 AM    | 	Check-in & Light Breakfast |    
 | 8:30 AM – 11:30 AM   |  [6.1a Parallel Computing using MPI & Open MP](https://github.com/sdsc/sdsc-summer-institute-2024/tree/main/6.1a_parallel_computing_mpi_openmp)  | [Mahidhar Tatineni](https://www.sdsc.edu/research/researcher_spotlight/tatineni_mahidhar.html) |
-| 8:30 AM – 11:30 AM   |  [6.1b A Short Introduction to Data Science and its Applications](https://github.com/sdsc/sdsc-summer-institute-2024/tree/main/6.1b_intro_to_data_science) | [Subhasis Dasgupta](https://profiles.ucsd.edu/subhasis.dasgupta) </br> [Shweta Purawat](https://profiles.ucsd.edu/shweta.purawat)
+| 8:30 AM – 11:30 AM   |  [6.1b A Short Introduction to Data Science and its Applications](https://github.com/sdsc/sdsc-summer-institute-2024/tree/main/6.1b_intro_to_data_science) | [Subhasis Dasgupta](https://profiles.ucsd.edu/subhasis.dasgupta) </br> Jon Stephens
 | 11:30 AM – 11:45 AM  |  [6.2 Overview of Voyager]() | [Amit Majumdar]()  |
 | 11:45 AM - 12:00 PM  | [6.3 Overview of COSMOS]() | [Mahidhar Tatineni](https://www.sdsc.edu/research/researcher_spotlight/tatineni_mahidhar.html) |
 | 12:15 PM – 12:30 PM  | Closing Remarks | [Robert Sinkovits](https://www.sdsc.edu/research/researcher_spotlight/sinkovits_robert.html) |
