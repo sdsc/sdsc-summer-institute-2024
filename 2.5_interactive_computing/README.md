@@ -35,7 +35,8 @@ This session will introduce participants to advanced CI concepts and what’s go
 [Back to Top](#top)
 <hr>
 
-### TASK 2: Hands-on: Interactive Computing on CPU Node <a name="task2"></a>
+### TASK 2: Hands-on: Interactive Computing on a CPU Node <a name="task2"></a>
+When submitting a job to the batch queue, you use a script and submit the script to the queue. The job launches and runs your parallel code on the remote node in the background. This is not _interactive computing_. In this example you will learn to acquire a _compute node_, to compile your code on that node, and to run your parallel job from the command line.
 
 #### On the day of the institute:
 Use the __aliased__ command to obtain compute resources:
