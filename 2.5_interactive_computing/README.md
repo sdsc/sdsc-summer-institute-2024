@@ -12,7 +12,9 @@
 * [Task 4: Hands-on: Run GnuPlot on CPU](#task4)
 * [Task 5: Examine NetCDF data on CPU](#task5)
 
-**Summary**: Interactive computing refers to working with software that accepts input from the user as it runs. This applies not only to business and office applications, such as word processing and spreadsheet software, but HPC use cases involving code development, real-time data exploration and advanced visualizations run across one or more compute nodes. Interactive computing is often used when applications require large memory, have large data sets that are not that practical to download to local devices, need access to higher core counts or rely on software that is difficult to install. User inputs are entered via a command line interface (CLI) or application GUI (e.g., Jupyter Notebooks, Matlab, RStudio). Actions are initiated on remote compute nodes as a result of user inputs.  This session will introduce participants to advanced CI concepts and what’s going on "under the hood" when they are using interactive tools.  Topics covered will include mechanisms for accessing interactive resources; commonalities and differences between batch and interactive computing; understanding the differences between web-based services and X11/GUI applications; monitoring jobs running on interactive nodes; overview of Open OnDemand portals.
+**Summary**: Interactive computing refers to working with software that accepts input from the user as it runs. This applies not only to business and office applications, such as word processing and spreadsheet software, but HPC use cases involving code development, real-time data exploration and advanced visualizations run across one or more compute nodes. Interactive computing is often used when applications require large memory, have large data sets that are not that practical to download to local devices, need access to higher core counts or rely on software that is difficult to install. User inputs are entered via a command line interface (CLI) or application GUI (e.g., Jupyter Notebooks, Matlab, RStudio). Actions are initiated on remote compute nodes as a result of user inputs.  
+
+This session will introduce participants to advanced CI concepts and what’s going on "under the hood" when they are using interactive tools.  Topics covered will include mechanisms for accessing interactive resources; commonalities and differences between batch and interactive computing; understanding the differences between web-based services and X11/GUI applications; monitoring jobs running on interactive nodes; overview of Open OnDemand portals.
 
 **Presented by:** [Mary Thomas](https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html) (mpthomas @ucsd.edu)
 
@@ -20,19 +22,21 @@
 * **Lecture material:**
    * Presentation Slides: will be made available closer to the session
 * **Source Code/Examples:** N/A
-   * SDSC HPC Training Examples Repo @ [https://github.com:sdsc-hpc-training-org/hpctr-examples.git](https://github.com:sdsc-hpc-training-org/hpctr-examples.git)
+   * SDSC HPC Training Examples Repo @ https://github.com:sdsc-hpc-training-org/hpctr-examples.git
    * Expanse 101 tutorial: https://hpc-training.sdsc.edu/expanse-101/
 
 [Back to Top](#top)
 <hr>
 
 ### TASK 1: Clone the repo <a name="task1"></a>
-   * Clone the  SDSC HPC Training Examples Repo @ [https://github.com:sdsc-hpc-training-org/hpctr-examples.git](https://github.com:sdsc-hpc-training-org/hpctr-examples.git)
+* Update or clone the HPC-DSI24 Repository @ https://github.com/sdsc/sdsc-summer-institute-2024.git
+* Clone the  SDSC HPC Training Examples Repo @ [https://github.com:sdsc-hpc-training-org/hpctr-examples.git](https://github.com:sdsc-hpc-training-org/hpctr-examples.git)
 
 [Back to Top](#top)
 <hr>
 
 ### TASK 2: Hands-on: Interactive Computing on CPU Node <a name="task2"></a>
+
 #### On the day of the institute:
 Use the __aliased__ command to obtain compute resources:
 * for a CPU compute node use  ```srun-shared``` 
@@ -49,7 +53,7 @@ srun: job 24459379 has been allocated resources
 ```
 
 * Check the README.txt file for information about compiling and running the code:
-
+**
 ```
 [mthomas@exp-12-30 calc-prime]$ cat README.txt 
 [1] Compile:
@@ -119,46 +123,46 @@ Currently Loaded Modules:
    c:  built natively for AMD Rome
 ```
 
-#### Run calc-prime from the command line
+#### Compile and Run calc-prime from the command line
 
-```
-mpirun -np 16 ./mpi_prime 500000
-07 August 2023 01:36:28 AM
+[mthomas@exp-12-30 calc-prime]$ mpicc -o mpi_prime mpi_prime.c 
+[mthomas@exp-12-30 calc-prime]$ mpirun -np 8 ./mpi_prime 50000
+The argument supplied is 50000
+04 August 2024 04:34:52 PM
 
 PRIME_MPI
- n_hi= 262144
+ n_hi= 50000
   C/MPI version
 
   An MPI example program to count the number of primes.
-  The number of processes is 16
+  The number of processes is 8
 
          N        Pi          Time
 
-         1         0        0.000817
-         2         1        0.000583
-         4         2        0.000004
-         8         4        0.000004
-        16         6        0.000004
-        32        11        0.000004
+         1         0        0.000764
+         2         1        0.000004
+         4         2        0.000003
+         8         4        0.000003
+        16         6        0.000003
+        32        11        0.000003
         64        18        0.000004
        128        31        0.000005
-       256        54        0.000008
-       512        97        0.000018
-      1024       172        0.000054
-      2048       309        0.000189
-      4096       564        0.000638
-      8192      1028        0.002281
-     16384      1900        0.008125
-     32768      3512        0.029826
-     65536      6542        0.111391
-    131072     12251        0.415458
-    262144     23000        1.543699
-    524288     43390       23.354061
+       256        54        0.000010
+       512        97        0.000031
+      1024       172        0.000095
+      2048       309        0.000328
+      4096       564        0.001234
+      8192      1028        0.004312
+     16384      1900        0.015964
+     32768      3512        0.059057
 
 PRIME_MPI - Master process:
   Normal end of execution.
 
-07 August 2023 01:44:11 AM
+04 August 2024 04:34:52 PM
+
+```
+
 ```
 
 [Back to Top](#top)
