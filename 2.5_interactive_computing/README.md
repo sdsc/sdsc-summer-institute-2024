@@ -66,7 +66,6 @@ module load openmpi/4.1.1
 
 mpicc -o mpi_prime mpi_prime.c 
 
-
 [2] Run as batch job:
 
     sbatch mpi-prime-slurm.sb
@@ -100,9 +99,7 @@ Once you run this command, you will be on an interactive node, but the nodeID wi
 srun --mpi=pmi2 -n 8 ./calc-prime
 ```
 
-
-
-* Set up the module ENV:
+* Set up the module ENV and check what you have available:
 
 ```
 module purge 
@@ -110,11 +107,7 @@ module load slurm
 module load cpu
 module load gcc/10.2.0
 module load openmpi/4.1.1
-```
 
-* list the modules
-
-```
 [mthomas@exp-6-16 calc-prime]$ module list
 Currently Loaded Modules:
   1) slurm/expanse/21.08.8       3) gcc/10.2.0/npcyll4   5) openmpi/4.1.1/ygduf2r
@@ -125,6 +118,7 @@ Currently Loaded Modules:
 
 #### Compile and Run calc-prime from the command line
 
+```
 [mthomas@exp-12-30 calc-prime]$ mpicc -o mpi_prime mpi_prime.c 
 [mthomas@exp-12-30 calc-prime]$ mpirun -np 8 ./mpi_prime 50000
 The argument supplied is 50000
@@ -160,8 +154,6 @@ PRIME_MPI - Master process:
   Normal end of execution.
 
 04 August 2024 04:34:52 PM
-
-```
 
 ```
 
