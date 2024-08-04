@@ -33,6 +33,11 @@
 <hr>
 
 ### TASK 2: Hands-on: Interactive Computing on CPU Node <a name="task2"></a>
+#### On the day of the institute:
+Use the __aliased__ command to obtain compute resources:
+* for a CPU compute node use  ```srun-shared``` 
+* for a GPU compute node use  ```srun-gpu-shared``` 
+
 #### Use the srun command to get an interactive CPU node:
 
 ```
