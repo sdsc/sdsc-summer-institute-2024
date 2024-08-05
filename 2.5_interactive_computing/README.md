@@ -21,14 +21,14 @@ This session will introduce participants to advanced CI concepts and what’s go
 * **Lecture material:**
    * Presentation Slides: will be made available closer to the session
 * **Source Code/Examples:** N/A
-   * SDSC HPC Training Examples Repo @ https://github.com:sdsc-hpc-training-org/hpctr-examples.git
-   * Expanse 101 tutorial: https://hpc-training.sdsc.edu/expanse-101/
+   * SDSC HPC Training Examples Repo @ [https://github.com:sdsc-hpc-training-org/hpctr-examples.git](https://github.com:sdsc-hpc-training-org/hpctr-examples.git)
+   * Expanse 101 tutorial: [https://hpc-training.sdsc.edu/expanse-101/](https://hpc-training.sdsc.edu/expanse-101/)
 
 [Back to Top](#top)
 <hr>
 
 ### TASK 1: Clone the repo <a name="task1"></a>
-* Update or clone the HPC-DSI24 Repository @ https://github.com/sdsc/sdsc-summer-institute-2024.git
+* Update or clone the HPC-DSI24 Repository @ [https://github.com/sdsc/sdsc-summer-institute-2024.git](https://github.com/sdsc/sdsc-summer-institute-2024.git)
 * Clone the  SDSC HPC Training Examples Repo @ [https://github.com:sdsc-hpc-training-org/hpctr-examples.git](https://github.com:sdsc-hpc-training-org/hpctr-examples.git)
 
 [Back to Top](#top)
