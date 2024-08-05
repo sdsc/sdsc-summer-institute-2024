@@ -15,3 +15,6 @@
 * **Source Code/Examples:** 
    * https://github.com/mkandes/batch-computing
    * https://github.com/mkandes/4pi
+
+* **Link to Expanse User Portal:
+   * https://portal.expanse.sdsc.edu/training
