@@ -9,8 +9,7 @@
 * [Task 1: Clone the repo](#task1)
 * [Task 2: Hands-on: Interactive Computing on CPU Node](#task2)
 * [Task 3: Hands-on: Interactive Computing on GPU Node](#task3)
-* [Task 4: Hands-on: Run GnuPlot on CPU](#task4)
-* [Task 5: Examine NetCDF data on CPU](#task5)
+* [Task 4: Examine NetCDF data on CPU](#task5)
 
 **Summary**: Interactive computing refers to working with software that accepts input from the user as it runs. This applies not only to business and office applications, such as word processing and spreadsheet software, but HPC use cases involving code development, real-time data exploration and advanced visualizations run across one or more compute nodes. Interactive computing is often used when applications require large memory, have large data sets that are not that practical to download to local devices, need access to higher core counts or rely on software that is difficult to install. User inputs are entered via a command line interface (CLI) or application GUI (e.g., Jupyter Notebooks, Matlab, RStudio). Actions are initiated on remote compute nodes as a result of user inputs.  
 
@@ -46,7 +45,7 @@ Use the __aliased__ command to obtain compute resources:
 #### Use the srun command to get an interactive CPU node:
 
 ```
-[mthomas@login02 calc-prime]$ srun --partition=compute  --pty --account=use300 --nodes=1 --ntasks-per-node=128 --mem=8G -t 00:30:00 --wait=0 --export=ALL /bin/bash
+[mthomas@login02 calc-prime]$ srun --partition=compute  --pty --account=<<accnt_number>>  --nodes=1 --ntasks-per-node=128 --mem=8G -t 00:30:00 --wait=0 --export=ALL /bin/bash
 srun: job 24459379 queued and waiting for resources
 srun: job 24459379 has been allocated resources
 [mthomas@ ]$ cd hpctr-examples/calc-prime
@@ -165,24 +164,32 @@ PRIME_MPI - Master process:
 
 #### Use the srun command to get an interactive GPU node:
 
+#### On the day of the institute:
+Use the __aliased__ command to obtain compute resources:
+* for a CPU compute node use  ```srun-shared``` 
+* for a GPU compute node use  ```srun-gpu-shared``` 
+
+#### Otherwise, use the command:
+
 ```
-srun --partition=gpu-debug --pty --account=use300 --ntasks-per-node=10 --nodes=1 --mem=96G --gpus=1 -t 00:30:00 --wait=0 --export=ALL /bin/bash
+srun --partition=gpu-debug --pty --account=<<accnt_number>> --ntasks-per-node=10 --nodes=1 --mem=96G --gpus=1 -t 00:30:00 --wait=0 --export=ALL /bin/bash
 ```
 
 * Check that you are on an NVIDIA GPU:
 
 ```
-[mthomas@exp-7-59 mpi]$ nvidia-smi
-Mon Aug  7 01:51:59 2023       
+[mthomas@exp-7-59]$ cd hpctr-examples
+[mthomas@exp-7-59 hpctr-examples]$ nvidia-smi
+Sun Aug  4 17:04:30 2024       
 +-----------------------------------------------------------------------------+
-| NVIDIA-SMI 515.65.01    Driver Version: 515.65.01    CUDA Version: 11.7     |
+| NVIDIA-SMI 525.85.12    Driver Version: 525.85.12    CUDA Version: 12.0     |
 |-------------------------------+----------------------+----------------------+
 | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
 | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
 |                               |                      |               MIG M. |
 |===============================+======================+======================|
 |   0  Tesla V100-SXM2...  On   | 00000000:18:00.0 Off |                    0 |
-| N/A   34C    P0    41W / 300W |      0MiB / 32768MiB |      0%      Default |
+| N/A   35C    P0    41W / 300W |      0MiB / 32768MiB |      0%      Default |
 |                               |                      |                  N/A |
 +-------------------------------+----------------------+----------------------+
                                                                                
@@ -193,7 +200,35 @@ Mon Aug  7 01:51:59 2023
 |=============================================================================|
 |  No running processes found                                                 |
 +-----------------------------------------------------------------------------+
-[mthomas@exp-7-59 mpi]$ 
+[mthomas@exp-7-59 hpctr-examples]$ 
+ 
+```
+
+* Move to the CUDA Hello World example, check the README file.
+
+```
+[mthomas@exp-7-59 hpctr-examples]$ cd cuda/hello-world
+[mthomas@exp-7-59 hello-world]$ cat README.txt 
+Hello World (GPU/CUDA)
+------------------------------------------------------------------------
+Updated by Mary Thomas (mthomas at ucsd.edu)
+August, 2023
+------------------------------------------------------------------------
+
+[1] Load the correct modules for the CUDA Compiler:
+
+module purge
+module load gpu/0.15.4
+module load gcc/7.2.0
+module load cuda/11.0.2
+module load slurm
+
+[2] compile:
+nvcc -o hello_world hello_world.cu
+
+[3] run from interactive node
+./hello_world
+[mthomas@exp-7-59 hello-world]$
 ```
 
 * Set up the module ENV:
@@ -212,16 +247,10 @@ Currently Loaded Modules:
    g:  built natively for Intel Skylake
 ```
 
-* cd to cuda/hello-world directory
-* compile hello-world
+* compile and run hello-world
 
 ```
 nvcc -o hello_world hello_world.cu
-```
-
-* Run the hello-world applciation
-
-```
 [mthomas@exp-7-59 hello-world]$ ./hello_world 
 Hello,  SDSC HPC Training World!
 [mthomas@exp-7-59 hello-world]$ 
@@ -229,15 +258,24 @@ Hello,  SDSC HPC Training World!
 
 * Try this for addition
 
+```
+[mthomas@exp-7-59 addition]$ cd ~/hpctr-examples/cuda/addition
+[mthomas@exp-7-59 addition]$ nvcc -o add_gpu add_gpu.cu
+[mthomas@exp-7-59 addition]$ ./add_gpu 
+
+ Addition on CPU: 5 + 7 = 12
+
+ Addition on GPU: 5 + 7 = 12
+
+[mthomas@exp-7-59 addition]$ 
+
+```
+
+
 [Back to Top](#top)
 <hr>
 
-### TASK 4: Hands-on: Run GnuPlot on CPU<a name="task4"></a>
-
-[Back to Top](#top)
-<hr>
-
-### TASK 5: Examine NetCDF data on CPU<a name="task5"></a>
+### TASK 4: Examine NetCDF data on CPU<a name="task5"></a>
 
 
 [Back to Top](#top)
