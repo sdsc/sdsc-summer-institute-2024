@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH --job-name="dask-workers"
+#SBATCH --output="dask-workers.%j.%N.out"
+#SBATCH --partition=compute
+#SBATCH --reservation=hpcds23cpu
+#SBATCH --account=gue998
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=1
+#SBATCH --export=ALL
+#SBATCH --mem=240G
+#SBATCH -t 0:10:00
+
+srun bash ./launch_worker.sh
