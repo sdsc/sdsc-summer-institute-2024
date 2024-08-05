@@ -15,12 +15,11 @@
 
 ### Reading and Presentations:
 * **Lecture material:**
-   * https://education.sdsc.edu/training/interactive/?id=202302-SDSCWebinar-Batch-Job-Scheduling-Slurm-Edition
-   * https://education.sdsc.edu/training/interactive/?id=202403-Batch-Computing-Part-1
+   * https://education.sdsc.edu/training/interactive/?id=202406-Data-Transfer
   
 * **Source Code/Examples:** 
-   * https://github.com/mkandes/batch-computing
-   * https://github.com/mkandes/4pi
+   * https://github.com/sdsc/sdsc-summer-institute-2022/blob/main/2.5_data_management/DOWNLOADING.md
+   * https://github.com/sdsc/sdsc-summer-institute-2022/blob/main/2.5_data_management/FILESYSTEMS.md
 
 #### Additional References
   - [Data Management & File Systems (2023)](https://www.sdsc.edu/event_items/202303-SDSCWebinar-Data-Management-File-Systems.html)
