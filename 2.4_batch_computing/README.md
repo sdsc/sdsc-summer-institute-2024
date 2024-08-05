@@ -16,7 +16,7 @@
    * https://github.com/mkandes/batch-computing
    * https://github.com/mkandes/4pi
 
-* **Link to Expanse User Portal:
+* **Link to Expanse User Portal:**
    * https://portal.expanse.sdsc.edu/training
 
 Our first batch job script example.
