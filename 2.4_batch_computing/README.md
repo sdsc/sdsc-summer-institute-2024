@@ -3,22 +3,18 @@
 
 **Date:** Monday, August 5, 2024
 
-**Summary**: As computational and data requirements grow, researchers may find that they need to make the transition from dedicated resources (e.g., laptops, desktops) to campus clusters or nationally allocated systems. Jobs on these shared resources are typically executed under the control of a batch submission system such as Slurm, PBS, LSF or SGE. This requires a different mindset since the job needs to be configured so that the application(s) can be run non-interactively and at a time determined by the scheduler. The user also needs to specify the job duration, account information, hardware requirements and partition or queue. The goals of this session are to introduce participants to the fundamentals of batch computing before diving into the details of any particular workload manager to help them become more proficient, help ease porting of applications to different resources, and to allow CI Users to understand concepts such as fair share scheduling and backfilling.
+**Summary**: In this session on Batch Computing, we will introduce you to the concept of a distributed batch job scheduler — what they are, why they exist, and how they work — using the Slurm Workload Manager as our reference implementation and testbed. You will then learn how to write your first job script and submit it to an HPC System running Slurm as its scheduler. We will also discuss the best practices for how to structure your batch job scripts, teach you how to leverage Slurm environment variables, and provide tips on how to request resources from the scheduler to get your work done faster.
 
 **Presented by:** [Marty Kandes](https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html) (mkandes @sdsc.edu)
 
 ### Reading and Presentations:
 * **Lecture material:**
-   * Presentation Slides: Slides will be made available closer to the start of the session.
+   * https://education.sdsc.edu/training/interactive/?id=202302-SDSCWebinar-Batch-Job-Scheduling-Slurm-Edition
+   * https://education.sdsc.edu/training/interactive/?id=202403-Batch-Computing-Part-1
+  
 * **Source Code/Examples:** 
-   * SDSC HPC Training Examples Repo @ [https://github.com/sdsc-hpc-training-org/hpctr-examples](https://github.com/sdsc-hpc-training-org/hpctr-examples)
-   * Expanse 101 tutorial: https://hpc-training.sdsc.edu/expanse-101/
+   * https://github.com/mkandes/batch-computing/tree/main
 
-### TASKS: Hands-on
-   * Clone the  SDSC HPC Training Examples Repo @ [https://github.com/sdsc-hpc-training-org/hpctr-examples](https://github.com/sdsc-hpc-training-org/hpctr-examples)
-   * Run the following examples: env_info, mpi/hello-mpi, and calc-prime
-   * Both the batch script and interactive commands should work
-   * For more examples and in-depth Expanse tutorial, see https://hpc-training.sdsc.edu/expanse-101/
-   * Practice passing variables into the batch script from the command line
+
 
 [Back to Top](#top)
