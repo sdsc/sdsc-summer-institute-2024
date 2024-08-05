@@ -9,7 +9,7 @@
 
 ### Reading and Presentations:
 * **Lecture material:**
-   * Presentation Slides: [COMPLECS hardware overview](<COMPLECS hardware overview.pdf>))
+   * Presentation Slides: [COMPLECS hardware overview](<COMPLECS hardware overview.pdf>)
 * **Source Code/Examples:** N/A
 
 [Back to Top](#top)
