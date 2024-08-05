@@ -9,7 +9,7 @@
 
 ### Reading and Presentations:
 * **Lecture material:**
-   * Presentation Slides: will be made available closer to the session
+   * Presentation Slides: [COMPLECS Intermediate Linux](<COMPLECS Intermediate Linux.pdf>)
 * **Source Code/Examples:** N/A
   
 [Back to Top](#top)
