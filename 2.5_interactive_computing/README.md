@@ -278,17 +278,34 @@ Hello,  SDSC HPC Training World!
 <hr>
 
 ### TASK 4: Jupyter Notebooks<a name="task4"></a>
-* running notebooks
+Jupyter Notebooks are web applications that allow users to create (and share) interactive documents that contain live code, equations, visualizations, media, and other computational outputs. You can run notebooks locally on your laptop using software like Anaconda (https://anaconda.org/), or you can run them on remote systems using a hosting environment called Jupyter Labs. Not all notebooks launch securly (does not have HTTPS connections).
+* On Expanse, we support running notebooks using ```galyleo``` -- https://github.com/sdsc/galyleo/
+* ```galyleo``` is a shell utility that helps you launch Jupyter notebooks on on Expanse in a simple, secure (HTTPS) way. It works with SDSC's Satellite reverse proxy service and a batch job scheduler like Slurm to provide each Jupyter notebook server you start with its own one-time, token-authenticated HTTPS connection between the compute resources of the HPC system the notebook server is running on and your web browser.
 
+In this exercise, you will use the instructions on the ```galyleo``` web page to launch a notebook on Expanse. For this you need to:
+* create a directory with some example notebooks. You can grab some from the Expanse notebooks collection:
+  * clone onto Expanse: https://github.com/sdsc-hpc-training-org/Expanse-Notebooks.git
+* navigate to the directory where you installed the notebooks
+* run the CPU ```galyleo``` command that will launch a notebook for you. E.g.:
+  ```
+  galyleo launch --account abc123 --partition shared --cpus 2 --memory 4 --time-limit 00:30:00 --env-modules cpu/0.17.3b,anaconda3/2021.05
+  ```
 
 [Back to Top](#top)
 <hr>
 
 ### TASK 5: Log onto the Expanse Portal<a name="task5"></a>
-* Simplifies your user environment -> useful for tasks that don't involve a lot of compiling and code development
-* Web based access to your HPC System account, files, data, terminal connections, etc.
-* Provides Web based access to interactive applications including Jupyter Notebooks & Jupyter Lab, Matlab, Rstudio.
-* Access using your ACCESS portal account: https://github.com/user-attachments/assets/034cfd61-a0ef-4e24-b45e-e37c30cf2f4d
+* https:// portal.expanse.sdsc.edu
+  * Use your ACCESS credentials to log in
+* Simplifies your user environment
+   * useful for tasks that don't involve a lot of compiling and code development
+   * Authenticated access to your HPC System account, files, data, terminal connections, etc.
+* Supports building, running, and monitoring batch jobs
+* Provides Web based access to interactive applications including
+  * Jupyter Notebooks
+  * Jupyter Lab
+  * Matlab,
+  * Rstudio
 
 
 
