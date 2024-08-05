@@ -13,7 +13,7 @@
    * https://education.sdsc.edu/training/interactive/?id=202403-Batch-Computing-Part-1
   
 * **Source Code/Examples:** 
-   * https://github.com/mkandes/batch-computing/tree/main
+   * https://github.com/mkandes/batch-computing
 
 
 
