@@ -1,5 +1,5 @@
 Bootstrap: oras
-From: ghcr.io/mkandes/naked-singularity:ubuntu-20.04
+From: ghcr.io/mkandes/naked-singularity:ubuntu-22.04
 # From: ghcr.io/mkandes/naked-singularity:miniconda3-py39-4.11.0-ubuntu-20.04
 
 
@@ -17,7 +17,7 @@ From: ghcr.io/mkandes/naked-singularity:ubuntu-20.04
 %environment
 
     export MAMBA_ROOT_PREFIX="/opt/micromamba/"
-    export ENV_NAME=si23
+    export ENV_NAME=si24
 
     export PATH="${MAMBA_ROOT_PREFIX}/envs/${ENV_NAME}/bin:${PATH}"
 
@@ -37,7 +37,7 @@ From: ghcr.io/mkandes/naked-singularity:ubuntu-20.04
 
     export MAMBA_ROOT_PREFIX="/opt/micromamba/"
     export MAMBA="${MAMBA_ROOT_PREFIX}/bin/micromamba"
-    export ENV_NAME=si23
+    export ENV_NAME=si24
 
     mkdir -p ${MAMBA_ROOT_PREFIX}
     cd ${MAMBA_ROOT_PREFIX}
@@ -46,7 +46,7 @@ From: ghcr.io/mkandes/naked-singularity:ubuntu-20.04
     source ${HOME}/.bashrc
 
     $MAMBA create -n $ENV_NAME -c conda-forge --yes \
-    'python==3.10' \
+    'python==3.11' \
     'jupyterlab' \
     'dask' \
     'dask-labextension' \
@@ -59,6 +59,9 @@ From: ghcr.io/mkandes/naked-singularity:ubuntu-20.04
     'Pillow' \
     'ipywidgets' \
     'skimage' \
+    'astropy' \
+    'black' \
+    'jupyter-resource-usage' \
     'jupyter-server-proxy' && \
     "${MAMBA}" clean --all -f -y
 
