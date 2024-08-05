@@ -21,7 +21,7 @@ This session will introduce participants to advanced CI concepts and what’s go
 * **Lecture material:**
    * Presentation Slides: will be made available closer to the session
 * **Source Code/Examples:** N/A
-   * SDSC HPC Training Examples Repo @ https://github.com/sdsc-hpc-training-org/hpctr-examples
+   * SDSC HPC Training Examples Repo @ [https://github.com/sdsc-hpc-training-org/hpctr-examples](https://github.com/sdsc-hpc-training-org/hpctr-examples)
    * Expanse 101 tutorial: [https://hpc-training.sdsc.edu/expanse-101/](https://hpc-training.sdsc.edu/expanse-101/)
 
 [Back to Top](#top)
