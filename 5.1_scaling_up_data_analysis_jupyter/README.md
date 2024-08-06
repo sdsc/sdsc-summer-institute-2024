@@ -35,7 +35,7 @@ cd df-parallel
 
    This script will generate a URL for your Jupyter Lab session.
 ```
-galyleo launch --account ${SI23_ACCOUNT} --reservation ${SI23_RES_GPU} --qos ${SI23_QOS_GPU} --partition gpu-shared --cpus 10 --memory 92 --gpus 1 --time-limit 01:00:00 --conda-env df-parallel-gpu --conda-yml environment-gpu.yml --mamba
+galyleo launch --account ${SI24_ACCOUNT} --reservation ${SI24_RES_GPU} --qos ${SI24_QOS_GPU} --partition gpu-shared --cpus 10 --memory 92 --gpus 1 --time-limit 01:00:00 --conda-env df-parallel-gpu --conda-yml environment-gpu.yml --mamba
 ```
 
 5. Open a new tab in your web browser and paste the Jupyter Lab URL. It may take a few minutes to launch your session.
@@ -54,7 +54,7 @@ For this task you will compare the runtime for a simple data analysis using 5 da
 
 2. Copy data files
 
-    Run the ```1-FetchDataSummerInstitute.ipynb``` notebook to copy two data sets of gene information (gene_info.tsv, gene_info.parquet) to the scratch disk on the GPU node.
+    Run the ```1-FetchLocalData.ipynb``` notebook to copy two data sets of gene information (gene_info.tsv, gene_info.parquet) to the scratch disk on the GPU node.
 
 3. Run the Dataframe notebooks with a csv input file
 
