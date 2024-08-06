@@ -5,7 +5,7 @@
 
 **Summary**: This session will provide an overview of GitHub and an introduce version control with Git/GitHub for beginners. Participants will learn to create a repository on Github and manage files, use pull requests, merge changes, rebase branches, etc.
 
-**Presented by:** Elham Khoda
+**Presented by:** Elham E Khoda
 
 ### Reading and Presentations:
 * **Lecture material:**
