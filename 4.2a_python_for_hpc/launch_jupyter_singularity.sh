@@ -1,5 +1,5 @@
 export PATH="/cm/shared/apps/sdsc/galyleo:${PATH}"
-SIMG='/expanse/lustre/projects/sds166/zonca/dask-numba-si23.sif'
+SIMG='/expanse/lustre/projects/sds166/zonca/dask-numba-si24.sif'
 # Summer institute account
 # Use current folder
 NOTEBOOK_FOLDER=$(pwd -P)
@@ -12,6 +12,6 @@ cd ../
 # NOTEBOOK_FOLDER=${HOME}
 
 ## Debug
-#galyleo launch --account ${SI23_ACCOUNT} --partition debug --cpus 128 --memory 243 --time-limit 00:30:00 --env-modules singularitypro --jupyter 'lab' --notebook-dir "${NOTEBOOK_FOLDER}" --sif ${SIMG} --bind '/cm,/expanse,/scratch' --quiet
+#galyleo launch --account ${SI24_ACCOUNT} --partition debug --cpus 128 --memory 243 --time-limit 00:30:00 --env-modules singularitypro --jupyter 'lab' --notebook-dir "${NOTEBOOK_FOLDER}" --sif ${SIMG} --bind '/cm,/expanse,/scratch' --quiet
 
-galyleo launch --reservation ${SI23_RES_CPU} --account ${SI23_ACCOUNT} --partition compute --cpus 128 --memory 243 --time-limit 04:00:00 --env-modules singularitypro --jupyter 'lab' --notebook-dir "${NOTEBOOK_FOLDER}" --sif ${SIMG} --bind '/cm,/expanse,/scratch' --quiet
+galyleo launch --reservation ${SI24_RES_CPU} --account ${SI24_ACCOUNT} --partition compute --cpus 128 --memory 243 --time-limit 04:00:00 --env-modules singularitypro --jupyter 'lab' --notebook-dir "${NOTEBOOK_FOLDER}" --sif ${SIMG} --bind '/cm,/expanse,/scratch' --quiet
