@@ -72,8 +72,8 @@ wget https://raw.githubusercontent.com/sdsc/sdsc-summer-institute-2024/main/3.5_
 declare -xir ARRAY_JOB_ID="${1}"
 
 module reset
-module load gcc
-module load gnuplot
+module load gcc/10.2.0
+module load gnuplot/5.4.2
 
 echo "$(cat estimate-pi.o${ARRAY_JOB_ID}.*)" | \
   gnuplot -e 'stats "-"; print STATS_mean, STATS_stddev'
