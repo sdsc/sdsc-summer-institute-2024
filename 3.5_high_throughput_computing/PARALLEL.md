@@ -24,33 +24,7 @@
 
 ### Why go parallel?
 
-</br>
-
-**Speed** - Solve a problem more quickly
-
-<img src='https://github.com/sdsc/sdsc-summer-institute-2024/blob/main/3.5_high_throughput_computing/hpc-vs-htc.png' width='50%' height='50%'/>
-
-[Image Credit: NASA - Hurricane Katrina @ 50-km (2005) resolution](https://www.nasa.gov/feature/goddard/since-katrina-nasa-advances-storm-models-science)
-
-</br>
-
-**Scale** - Solve a larger, more complex problem with higher fidelity
-
-<img src='https://www.nasa.gov/sites/default/files/geos-5_wspd_6_katrina_0.png' width='50%' height='50%'/>
-
-[Image Credit: NASA - Hurricane Katrina @ 6.25-km (2015) resolution](https://www.nasa.gov/feature/goddard/since-katrina-nasa-advances-storm-models-science)
-
-</br>
-
-**Throughput** - Solve many (simple) problems more quickly
-
-<img src='https://www.sdsc.edu/assets/images/news_items/PR20210414_IceCube_antineutrino_1280x800.jpg' width='50%' height='50%'/>
-
-[Image Credit: IceCube- Glashow Event](https://www.sdsc.edu/News%20Items/PR20210414_IceCube_antineutrino.html)  
-
-<img src='https://www.sdsc.edu/assets/images/news_items/PR20191119_GPU_Cloudburst.jpg' width='50%' height='50%'/>
-
-[Image Credit: IceCube, SDSC/UCSD - GPU Cloud Burst Experiment](https://www.sdsc.edu/News%20Items/PR20191119_GPU_Cloudburst.html)
+<img src='https://github.com/sdsc/sdsc-summer-institute-2024/blob/main/3.5_high_throughput_computing/hpc-vs-htc.png' width='100%' height='100%'/>
 
 #
 
