@@ -59,8 +59,8 @@ wget https://raw.githubusercontent.com/sdsc/sdsc-summer-institute-2023/main/3.5_
 #!/usr/bin/env bash
 
 #SBATCH --job-name=compute-pi-stats
-#SBATCH --account=crl155
-#SBATCH --reservation=SI2022DAY2
+#SBATCH --account=gue998
+#SBATCH --reservation=si24
 #SBATCH --partition=shared
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
