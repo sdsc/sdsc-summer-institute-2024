@@ -29,5 +29,3 @@
 
 
 [Back to Top of Page](#top)
-
-Next - [CIFAR through the tubes: Downloading data from the internet](tutorials/DOWNLOADING.md)
