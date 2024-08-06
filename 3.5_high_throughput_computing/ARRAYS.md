@@ -396,6 +396,8 @@ real 535.73
 
 Let's migrate from the (slow) bash-based Pi program to the (faster) python one for a better estimate. We'll then create a large array job, but throttle the number of jobs that can run simultaneosuly. 
 
+- https://slurm.schedmd.com/high_throughput.html
+
 ```
 #SBATCH --array=1-512%32
 
