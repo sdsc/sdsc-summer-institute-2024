@@ -14,4 +14,17 @@
 
 ### TASKS: None at this time.
 
+### Resources
+[Indispensable Security](https://education.sdsc.edu/training/interactive/?id=202007_CometWebinar)
+A more detailed talk with some how-to guidance on passwords, SSH keys, file permissions, and more.
+
+[Enduring Security](https://education.sdsc.edu/training/interactive/?id=202204_ExpanseWebinar-Enduring-Security-The-Journey-Continues)
+Additional discussion about general security themes.
+
+[Open Science Cyber Risk Profile](https://trustedci.github.io/OSCRP/)
+A framework by TrustedCI for enumerating your cybersecurity concerns.
+
+[Webauthn (FIDO2) Test/Demo](https://webauthn.io/)
+A site that demos the webauthn log-on flow. Also useful for testing if a device has FIDO2 support.
+
 [Back to Top](#top)
