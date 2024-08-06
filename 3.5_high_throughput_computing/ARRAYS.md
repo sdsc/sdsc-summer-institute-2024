@@ -319,12 +319,7 @@ MaxArraySize=1000
 MaxJobCount=40000
 ```
 
-```
-[xdtr108@login01 ~]$ sacctmgr show qos
-```
-
-- https://slurm.schedmd.com/high_throughput.html
-- https://www.sdsc.edu/support/user_guides/expanse.html
+What is the solution? Reindex using another environment variable based on your `SLURM_ARRAY_TASK_ID`.
 
 ```
 #SBATCH --array=1-5
