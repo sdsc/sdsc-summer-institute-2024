@@ -27,4 +27,7 @@ A framework by TrustedCI for enumerating your cybersecurity concerns.
 [Webauthn (FIDO2) Test/Demo](https://webauthn.io/)
 A site that demos the webauthn log-on flow. Also useful for testing if a device has FIDO2 support.
 
+[An Examination and Survey of Random Bit Flips and Scientific Computing](https://scholarworks.iu.edu/dspace/items/3499c53a-5b3c-458a-a29b-8d1517ef453d)
+
+
 [Back to Top](#top)
