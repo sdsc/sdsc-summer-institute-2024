@@ -28,7 +28,7 @@
 
 **Speed** - Solve a problem more quickly
 
-<img src='https://www.nasa.gov/sites/default/files/geos-5_wspd_2_katrina_0.png' width='50%' height='50%'/>
+<img src='https://github.com/sdsc/sdsc-summer-institute-2024/blob/main/3.5_high_throughput_computing/hpc-vs-htc.png' width='50%' height='50%'/>
 
 [Image Credit: NASA - Hurricane Katrina @ 50-km (2005) resolution](https://www.nasa.gov/feature/goddard/since-katrina-nasa-advances-storm-models-science)
 
