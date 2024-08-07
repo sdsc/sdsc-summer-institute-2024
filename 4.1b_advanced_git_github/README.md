@@ -1,11 +1,12 @@
 # Session 4.1b Advanced Git & GitHub
 
-**Date:** Wednesday, August 6, 2024
+**Date:** Wednesday, August 7, 2024
 
-**Presented by:** [Fernando Garzon]()
+**Presented by:** [Fernando Garzon](https://github.com/ofgarzon2662)
 
 You should be already familiar with creating pull requests, merging, and rebasing branches
 
+- https://github.com/ofgarzon2662/summerInstitue2024
 - https://github.com/sdsc/sdsc-summer-institute-2021/tree/main/1.4b_Advanced_Github
 - https://github.com/zonca/conversion_tofix
 - https://www.youtube.com/playlist?list=PLSO-KmvudTTtQ19g7ATjnIJja2EsC2dQN
@@ -439,4 +440,4 @@ You can then confirm your pull request was created and submitted to Andrea's ori
 
 #
 
-[Marty Kandes](https://github.com/mkandes), Computational & Data Science Research Specialist, HPC User Services Group, SDSC
+[Fernando Garzon](https://github.com/ofgarzon2662), Computational & Data Science Research Specialist, HPC User Services Group, SDSC
