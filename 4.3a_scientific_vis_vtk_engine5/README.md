@@ -5,7 +5,7 @@
 
 **Summary**: This tutorial will provide a high-level overview of scientific visualization techniques with two open-source software suites. We will primarily cover structured mesh-based data, but we will address other commonly encountered datasets such as point clouds and geographic data as well. Attendees will employ a state-of-the-art game engine to render 3D scenes containing scientific data. This is a hands-on workshop that will require an adequate computer and the installation of large software packages.
 
-**Presented by:** Isaac Nealey
+**Presented by:** Isaac Nealey - inealey@ucsd.edu
 
 ### Reading and Presentations:
 * **Lecture material:**
