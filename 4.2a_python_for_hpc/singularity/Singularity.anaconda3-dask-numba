@@ -61,6 +61,9 @@ From: ghcr.io/mkandes/naked-singularity:ubuntu-22.04
     'skimage' \
     'astropy' \
     'black' \
+    'pytables' \
+    'xarray' \
+    'netcdf4' \
     'jupyter-resource-usage' \
     'jupyter-server-proxy' && \
     "${MAMBA}" clean --all -f -y
