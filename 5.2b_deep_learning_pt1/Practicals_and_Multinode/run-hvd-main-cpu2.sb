@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+#SBATCH --job-name=tfhvd-cpu
+#SBATCH --account=gue998
+#SBATCH --partition=compute
+#SBATCH --nodes=2  
+#SBATCH --ntasks-per-node=8  #<<<<<------ change this to 16 or 4 and observe changes in training time (listed at end of stdoutput file)
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=240G   
+#SBATCH --time=00:15:00
+#SBATCH --output=slurm.cpu2.%x.o%j.out
+
+#SBATCH --time=00:30:00
+#SBATCH --reservation=si24
+#SBATCH --qos=normal-eot
+
+
+#----------- set up modules -----------------------------
+module reset
+module load slurm  
+module load gcc/10.2.0          #compiler, unix   
+module load openmpi/4.1.3       #open mpi       
+module load singularitypro/3.11  #container      
+module list
+
+#----------- set up some environmental settings --------
+export OMPI_MCA_btl='self,vader'
+export UCX_TLS='shm,rc,ud,dc'
+export UCX_NET_DEVICES='mlx5_0:1'
+export UCX_MAX_RNDV_RAILS=1
+
+#might need to cd into the working directory
+#e.g.   cd /home/$USER/MNODETest
+
+#------ execute the mpirun command to launch container instances ----------
+mpirun -n ${SLURM_NTASKS} singularity exec --bind /expanse,/scratch /cm/shared/apps/containers/singularity/tensorflow/tensorflow_22.08-tf2-py3.sif python3 ./MNIST_wHVD.py > stdout_cpu2_mnist_${SLURM_NTASKS}.txt  
+
