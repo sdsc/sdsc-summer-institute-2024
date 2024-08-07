@@ -58,7 +58,10 @@ From: ghcr.io/mkandes/naked-singularity:ubuntu-22.04
     'h5py' \
     'Pillow' \
     'ipywidgets' \
-    'skimage' \
+    'scikit-image' \
+    'scikit-learn' \
+    'jupyter-ai' \
+    'langchain-google-genai' \
     'astropy' \
     'black' \
     'pytables' \
