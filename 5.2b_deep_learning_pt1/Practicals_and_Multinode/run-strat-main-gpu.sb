@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+#SBATCH --job-name=tfstrat-gpu
+#SBATCH --account=gue998
+#SBATCH --partition=gpu
+#SBATCH --nodes=1                
+#SBATCH --ntasks-per-node=4 
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=90G          
+#SBATCH --gpus=4            #use 4 for gpu, 1 for gpu-debug
+#SBATCH --time=00:05:00
+#SBATCH --output=slurm.gpudebug.%x.o%j.%N.out
+
+module purge
+module load slurm  
+module load cpu/0.15.4  
+module load gcc/9.2.0    
+module load cuda   
+module load openmpi/4.1.1 
+module load singularitypro  
+module list
+
+export OMPI_MCA_btl='self,vader,openib'
+export OMPI_MCA_btl_openib_if_include='mlx5_0:1'
+export OMPI_MCA_btl_openib_allow_ib='true'
+
+#cd into working directory (where py script is)
+cd /home/p4rodrig/WKSHOPS/SI2024/PracticalGuidelines
+
+#for mirrored strategy within 1 node:
+singularity exec --nv --bind /expanse,/scratch /cm/shared/apps/containers/singularity/tensorflow/tensorflow-latest.sif python3 ./MNIST_wStrategy.py > stdoutgpu.mainstrat.txt
+

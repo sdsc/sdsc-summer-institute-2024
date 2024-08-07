@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+#SBATCH --job-name=tfstrat-cpu
+#SBATCH --account=gue998
+#SBATCH --partition=compute
+#SBATCH --nodes=1                
+#SBATCH --ntasks-per-node=1 
+#SBATCH --cpus-per-task=6
+#SBATCH --mem=240G   
+#SBATCH --time=00:15:00
+#SBATCH --output=slurm.cpustrat.%x.o%j.%N.out
+
+#SBATCH --reservation=si24
+#SBATCH --qos=normal-eot
+
+#----------- set up modules -----------------------------
+module reset
+module load slurm  
+module load gcc/10.2.0          #compiler, unix   
+module load openmpi/4.1.3       #open mpi       
+module load singularitypro/3.11  #container      
+module list
+
+#----------- set up some environmental settings --------
+export OMPI_MCA_btl='self,vader'
+export UCX_TLS='shm,rc,ud,dc'
+export UCX_NET_DEVICES='mlx5_0:1'
+export UCX_MAX_RNDV_RAILS=1
+
+#printenv |grep 'SLURM'
+
+#might need to cd into working directory (or submit job from there)
+#   cd /expanse/lustre/projects/sds164/p4rodrig/TFwstrat
+
+#for mirrored strategy within 1 node:
+singularity exec --bind /expanse,/scratch /cm/shared/apps/containers/singularity/tensorflow/tensorflow-latest.sif python3 ./MNIST_wStrategy.py > stdoutcpu.mainstrat.txt
+
