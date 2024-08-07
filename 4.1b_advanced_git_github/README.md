@@ -440,4 +440,4 @@ You can then confirm your pull request was created and submitted to Andrea's ori
 
 #
 
-[Fernando Garzon]((https://github.com/ofgarzon2662), Computational & Data Science Research Specialist, HPC User Services Group, SDSC
+[Fernando Garzon](https://github.com/ofgarzon2662), Computational & Data Science Research Specialist, HPC User Services Group, SDSC
