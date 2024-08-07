@@ -9,7 +9,7 @@
 
 ### Reading and Presentations:
 * **Lecture material:**
-   * [Presentation Slides]
+   * [Presentation Slides](5.1_SDSC_SI_2024.pdf)
    
    * [Ten simple rules](https://doi.org/10.1371/journal.pcbi.1007007) for writing and sharing computational analyses in Jupyter Notebooks
 
@@ -19,7 +19,7 @@
 
 -----
 ## TASK 1: Launch Jupyter Lab on Expanse using a CONDA environment
-1. Open a Terminal Window ("expanse Shell Access") through the [Expanse Portal Training Account](https://portal.expanse.sdsc.edu/training) (use your trainxx login credentials)
+1. Open a Terminal Window ("expanse Shell Access") through the [Expanse Portal Training Account](https://portal.expanse.sdsc.edu/training)
 
 2. Clone the Git repository df-parallel in your home directory
 ```
