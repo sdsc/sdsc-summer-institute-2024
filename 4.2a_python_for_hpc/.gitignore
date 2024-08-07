@@ -1,0 +1,5 @@
+.ipynb_checkpoints
+1_dask_tutorial/data
+*.out
+mydask.png
+__pycache__
