@@ -7,7 +7,7 @@
 
 **Presented by:** [Andreas Goetz](https://www.sdsc.edu/research/researcher_spotlight/goetz_andreas.html) (awgoetz @ucsd.edu)
 
-**Presentation Slides**:
+**Presentation Slides**: [GPU Computing and Programming](<GPU Computing SI2024.pdf>)
 
 
 **Source code**:
@@ -31,18 +31,21 @@ Next we will use the alias for the `srun` command that is defined in your `.bash
 srun-gpu-shared
 ```
 
-Once we are on a GPU node, we load the `gpu` module to gain access to the GPU software stack. We will also load the `cuda11.7/toolkit` module, which provides the CUDA Toolkit:
+Once we are on a GPU node, we load the `gpu` module to gain access to the GPU software stack. We will also load the `cuda12.2/toolkit` module, which provides the CUDA Toolkit:
 ```
-module load gpu
-module load cuda11.7/toolkit
+module reset  # this will load the gpu module when on GPU nodes
+module load cuda12.2/toolkit
 module list
 ```
 You should see following output
 ```
 
 Currently Loaded Modules:
-  1) shared                  3) sdsc/1.0         5) gpu/0.17.3b
-  2) slurm/expanse/21.08.8   4) DefaultModules   6) cuda11.7/toolkit/11.7.1
+  1) shared            3) slurm/expanse/23.02.7   5) DefaultModules
+  2) gpu/0.17.3b (g)   4) sdsc/1.0
+
+  Where:
+   g:  built natively for Intel Skylake
 ```
 
 We can use the `nvidia-smi` command to check for available GPUs and which processes are running on the GPU.
@@ -77,7 +80,13 @@ Mon Jun 27 08:39:33 2022
 
 This Github repository contains the CUDA examples that were discussed during the presentation (directory `cuda-samples`).
 
-If you are interested in additional CUDA samples, take a look at the [official Nvidia CUDA samples Github repository](https://github.com/NVIDIA/cuda-samples). The Nvidia CUDA samples are also available in your `etrainXX` home directory under `~/data/cuda-samples-v11.6.tar.gz`.
+If you are interested in additional CUDA samples, take a look at the [official Nvidia CUDA samples Github repository](https://github.com/NVIDIA/cuda-samples). The Nvidia CUDA samples are also available in the `etrainXX` home directory under `~/data/cuda-samples-v12.2.tar.gz`.
+
+We recommend to extract the tarball in the local scratch directory:
+```
+cd $SLURM_TMPDIR
+tar xvf ~/data/cuda-samples-v12.2.tar.gz
+```
 
 We are now ready to look at the Nvidia CUDA samples.
 It can be instructive to look at the source code if you want to learn about CUDA.
@@ -94,17 +103,17 @@ nvcc --version
 should give the following output
 ```
 nvcc: NVIDIA (R) Cuda compiler driver
-Copyright (c) 2005-2022 NVIDIA Corporation
-Built on Wed_Jun__8_16:49:14_PDT_2022
-Cuda compilation tools, release 11.7, V11.7.99
-Build cuda_11.7.r11.7/compiler.31442593_0
+Copyright (c) 2005-2023 NVIDIA Corporation
+Built on Tue_Aug_15_22:02:13_PDT_2023
+Cuda compilation tools, release 12.2, V12.2.140
+Build cuda_12.2.r12.2/compiler.33191640_0
 ```
 
-We have version 11.7 installed so we are good to go. 
+We have version 12.2 installed so we are good to go. 
 
 We can now move into the `device_query` source directory and compile the code with the `make` command. By default the Makefile will compile for all possible Nvidia GPU architectures. We restrict it to use SM version 7.0, which is the architecture of the V100 GPUs in Expanse (although we could just compile all as well):
 ```
-cd cuda-samples-11.6/Samples/1_Utilities/deviceQuery
+cd cuda-samples-12.2/Samples/1_Utilities/deviceQuery
 ```
 ```
 make SMS=70
@@ -169,7 +178,8 @@ It is instructive to look at two different matrix multiplication examples and co
 
 First we will look at a hand-written matrix multiplication. This implementation features several performance optimizations such as minimize data transfer from GPU RAM to the GPU processors and increase floating point performance.
 ```
-cd cuda-samples-11.6/Samples/0_Introduction/matrixMul
+cd $SLURM_TMPDIR
+cd cuda-samples-12.2/Samples/0_Introduction/matrixMul
 ```
 ```
 make SMS=70
@@ -198,7 +208,8 @@ Finally, let us look at a matrix multiplication that uses Nvidia's CUBLAS librar
 
 We are now ready to compile the example:
 ```
-cd cuda-samples-11.6/Samples/4_CUDA_Libraries/matrixMulCUBLAS
+cd $SLURM_TMPDIR
+cd cuda-samples-12.2/Samples/4_CUDA_Libraries/matrixMulCUBLAS
 ```
 ```
 make SMS=70
@@ -228,7 +239,7 @@ How does the performance compare to the hand written (but optimized) matrix mult
 
 ### CUDA samples from slides
 
-Now take a look at the directory `cuda-samples` in the SI2023 Github repository, which contains the examples that were discussed during the presentation.
+Now take a look at the directory `cuda-samples` in the SI2024 Github repository, which contains the examples that were discussed during the presentation.
 
 
 ## Hands-on exercises on SDSC Expanse – OpenACC
